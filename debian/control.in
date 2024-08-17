@@ -1,5 +1,5 @@
 Source: zfs-modules-dkms
-Maintainer: Filip Dorosz <filip.dorosz@rapidrage.org>
+Maintainer: Gavin Scurr <gavin@scurr.me>; Filip Dorosz <filip.dorosz@rapidrage.org>
 Build-Depends: zfs-dkms
 
 Package: zfs-modules-KERNEL_VERSION-unsigned
