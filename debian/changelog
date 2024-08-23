@@ -1,4 +1,4 @@
-zfs-modules-dkms (2.2.5-1+scurrnet0) stable; urgency=low
+zfs-dkms (2.2.5-1+scurrnet0) stable; urgency=low
 
   * Initial release.
 
