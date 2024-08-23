@@ -2,7 +2,7 @@ Source: zfs-dkms
 Maintainer: Gavin Scurr <gavin@scurr.me>; Filip Dorosz <filip.dorosz@rapidrage.org>
 Build-Depends: zfs-dkms
 
-Package: zfs-modules-KERNEL_VERSION-unsigned
+Package: zfs-modules-ZFS_VERSION
 Description: ZFS modules for kernel version ${kernel-version}
 Architecture: amd64
 Provides: zfs-modules (= 2.2.5)
