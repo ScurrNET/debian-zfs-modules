@@ -3,7 +3,6 @@ Maintainer: Gavin Scurr <gavin@scurr.me>; Filip Dorosz <filip.dorosz@rapidrage.o
 Build-Depends: zfs-dkms
 
 Package: zfs-modules-KERNEL_VERSION-unsigned
-Version: 2.2.5-1+scurrnet0
 Description: ZFS modules for kernel version ${kernel-version}
 Architecture: amd64
 Provides: zfs-modules (= 2.2.5)
