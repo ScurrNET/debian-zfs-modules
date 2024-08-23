@@ -18,7 +18,8 @@ DIR := ${CURDIR}
 	dh $@
 	
 override_dh_gencontrol:
-	dh_gencontrol -- -v$(VERSION) -Vkernel-version=$(KVERSION)
+	#dh_gencontrol -- -v$(VERSION) -Vkernel-version=$(KVERSION)
+	dh_gencontrol -- -Vkernel-version=$(KVERSION)
 
 override_dh_auto_clean:
 	rm -rf debian/zfs-modules*
