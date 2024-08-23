@@ -1,4 +1,4 @@
-Source: zfs-modules-dkms
+Source: zfs-dkms
 Maintainer: Gavin Scurr <gavin@scurr.me>; Filip Dorosz <filip.dorosz@rapidrage.org>
 Build-Depends: zfs-dkms
 
