@@ -22,7 +22,7 @@ override_dh_gencontrol:
 	dh_gencontrol -- -Vkernel-version=$(KVERSION)
 
 override_dh_auto_clean:
-	rm -rf debian/zfs-modules*
+	rm -rf debian/zfs-dkms-modules*
 	rm -rf dkms_binaries_only dkms_main_tree
 	rm -f $(DIR)/zfs-$(ZFS_VERSION)-$(KVERSION).tar.gz
 
@@ -31,8 +31,8 @@ override_dh_auto_build:
 override_dh_auto_install:
 	dkms mktarball --binaries-only -k $(KVERSION) zfs/$(ZFS_VERSION) --archive $(DIR)/zfs-$(ZFS_VERSION)-$(KVERSION).tar.gz
 	tar -xvf $(DIR)/zfs-$(ZFS_VERSION)-$(KVERSION).tar.gz
-	mkdir -p debian/zfs-modules-$(KVERSION)-unsigned/lib/modules/$(KVERSION)/kernel/zfs
-	cp -av dkms_main_tree/$(KVERSION)/x86_64/module/*.ko* debian/zfs-modules-$(KVERSION)-unsigned/lib/modules/$(KVERSION)/kernel/zfs/
+	mkdir -p debian/zfs-dkms-modules/lib/modules/$(KVERSION)/kernel/zfs
+	cp -av dkms_main_tree/$(KVERSION)/x86_64/module/*.ko* debian/zfs-dkms-modules/lib/modules/$(KVERSION)/kernel/zfs/
 
 override_dh_installmodules:
 	dh_installmodules
